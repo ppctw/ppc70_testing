@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Serenity, HTML Responsive Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="" />
+    <meta
+      name="author"
+      content="" />
+    <!-- Le styles -->
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet" />
+    <link
+      href="css/prettyPhoto.css"
+      rel="stylesheet" />
+    <link
+      href="css/icons.css"
+      rel="stylesheet"
+      media="screen" />
+    <link
+      href="css/custom.css"
+      rel="stylesheet" />
+    <link
+      href="css/skindefault.css"
+      rel="stylesheet" />
+    <link
+      href="css/bootstrap-responsive.css"
+      rel="stylesheet" />
+    <link
+      href="css/default.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="css/effect.css" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/ie.css" />
+    <![endif]-->
+    <!-- Jquery - The rest of the scripts at the bottom-->
+    <script src="js/jquery-1.9.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Header
+================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button
+            type="button"
+            class="btn btn-navbar"
+            data-toggle="collapse"
+            data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            class="brand"
+            href="index.html"
+            >SERENITY.</a
+          >
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle js-activated"
+                  data-toggle="dropdown"
+                  >Pages <b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-header">General</li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="singleproject.html">Single Project</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Portfolio Fixed</li>
+                  <li><a href="portfolio2.html">Two Columns</a></li>
+                  <li><a href="portfolio3.html">Three Columns</a></li>
+                  <li><a href="portfolio4.html">Four Columns</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Masonry</li>
+                  <li><a href="masonry2.html">Two Columns</a></li>
+                  <li><a href="masonry3.html">Three Columns</a></li>
+                  <li><a href="masonry4.html">Four Columns</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Blog</li>
+                  <li><a href="blogindex.html">Index</a></li>
+                  <li><a href="blogsingle.html">Single Post</a></li>
+                  <li><a href="404.html">404</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle js-activated"
+                  data-toggle="dropdown"
+                  >Features <b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="columns.html">Columns</a></li>
+                  <li><a href="team.html">Team Styles</a></li>
+                  <li><a href="elements.html">More Elements</a></li>
+                  <li><a href="icons.html">Icons</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Buy Theme</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- Intro
+================================================== -->
+    <div class="introtitle">
+      <div class="container">
+        <h1>Masonry</h1>
+        <p>Two Columns</p>
+      </div>
+    </div>
+    <!-- END Intro -->
+    <div class="container">
+      <!-- Filtering Menu
+	================================================== -->
+      <div class="row-fluid">
+        <div class="span12 text-center">
+          <div id="filter">
+            <ul>
+              <li>
+                <a
+                  href=""
+                  data-filter="*"
+                  class="selected"
+                  ><i class="icon icon-reorder"></i> All Items</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  data-filter=".cat1"
+                  ><i class="icon icon-th-large"></i> Landscape</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  data-filter=".cat2"
+                  ><i class="icon icon-th-list"></i> Overview</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  data-filter=".cat3"
+                  ><i class="icon icon-th"></i> Green Nature</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END filtering menu -->
+      <!-- MASONRY ITEMS START
+	================================================== -->
+      <div id="content">
+        <!-- box 1 -->
+        <section class="col-12 tab-container effectTab-header">
+          <div class="custom-row">
+            <div
+              class="wrapper"
+              align="center"
+              data-aos="fade-up">
+              <h1 class="ti title text-white">一、認識和平教會</h1>
+            </div>
+            <div class="grid col-12">
+              <figure
+                class="effect-julia col-sm-12"
+                data-aos="fade-up">
+                <a href="about/page1_about.html">
+                  <img
+                    src="img/about/ch1_1.png"
+                    alt="img22" />
+                  <figcaption>
+                    <h2>使命宣言</h2>
+                    <div>
+                      <p>建立一個強本外展，</p>
+                      <br />
+                      <p>虛實整合、使徒性的和平教會</p>
+                    </div>
+                  </figcaption>
+                </a>
+              </figure>
+              <figure
+                class="effect-julia"
+                data-aos="fade-left">
+                <a href="about/page2_about.html">
+                  <img
+                    src="img/about/ch1_2.png"
+                    alt="img22" />
+                  <figcaption>
+                    <h2><span>PPC 2.0</span></h2>
+                    <div>
+                      <p>「和平教會2.0」的建造，</p>
+                      <p>就是一個使徒性教會的建造</p>
+                    </div>
+                  </figcaption>
+                </a>
+              </figure>
+              <figure
+                class="effect-julia"
+                data-aos="fade-up">
+                <a href="templete/tmp.html">
+                  <img
+                    src="img/about/ch1_3.png"
+                    alt="img22" />
+                  <figcaption>
+                    <h2><span>教會團隊</span></h2>
+                    <div>
+                      <p>牧養團隊與事工團隊</p>
+                      <p>幫助會友在信仰上不斷追求與成長，</p>
+                      <p>信心穩固，屬靈成熟</p>
+                    </div>
+                  </figcaption>
+                </a>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!-- next box etc -->
+      </div>
+      <!-- MASONRY ITEMS END -->
+    </div>
+    <!-- Footer
+================================================== -->
+    <div class="footer">
+      <div class="container">
+        <!-- 1st row -->
+        <div class="row-fluid">
+          <div class="span12 text-center">
+            <h1
+              class="title"
+              style="color: #ccc">
+              Get in touch
+            </h1>
+            <p>If you have a specific project or event for us, get in touch today on:</p>
+            <span>+42 (0) 628 593 842</span> or <span>photo@serenity.com.au</span>
+          </div>
+        </div>
+        <hr />
+        <!-- 2nd row -->
+        <div class="row-fluid">
+          <!-- left -->
+          <div class="span4 smallspacetop">
+            <p class="smaller">
+              <span class="copyright">&copy; </span> Copyright 2013 Serenity Theme
+            </p>
+          </div>
+          <!-- middle -->
+          <div class="span4">
+            <div class="text-center">
+              <a class="totop"><i class="icon-chevron-up"></i></a>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="span4 smallspacetop">
+            <ul class="social-links pull-right">
+              <li class="twitter-link">
+                <a
+                  href="#"
+                  class="twitter has-tip"
+                  target="_blank"
+                  title="Follow Us on Twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li class="facebook-link">
+                <a
+                  href="#"
+                  class="facebook has-tip"
+                  target="_blank"
+                  title="Join us on Facebook"
+                  >Facebook</a
+                >
+              </li>
+              <li class="google-link">
+                <a
+                  href="#"
+                  class="google has-tip"
+                  title="Google +"
+                  target="_blank"
+                  >Google</a
+                >
+              </li>
+              <li class="linkedin-link">
+                <a
+                  href="#"
+                  class="linkedin has-tip"
+                  title="Linkedin"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </li>
+              <li class="pinterest-link">
+                <a
+                  href="#"
+                  class="pinterest has-tip"
+                  title="Pinterest"
+                  target="_blank"
+                  >Pinterest</a
+                >
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <!-- end right -->
+        </div>
+      </div>
+    </div>
+    <!-- Le javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+  </body>
+</html>

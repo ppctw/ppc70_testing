@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.another {
+  margin-top: -30px;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/*TIMELINE STARTS*/
+.timeline-wrapper,
+.timelin-main,
+.timelin-main li {
+  position: relative;
+}
+
+.timelin-main {
+  padding: 60px 0;
+}
+
+.timeline-wrapper:before,
+.timeline-wrapper:after {
+  z-index: 4;
+}
+
+/*main top circle*/
+.timeline-wrapper:before {
+  top: 0;
+}
+
+/*main bottom circle*/
+.timeline-wrapper:after {
+  bottom: 0;
+}
+
+/*main vertical line*/
+.timelin-main:before {
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  z-index: 3;
+}
+
+/*news post - left right left right*/
+.timelin-main li > div {
+  width: 35%;
+  padding: 15px 30px;
+  border-radius: 5px;
+  /* border: 1px solid rgb(9, 111, 183); */
+  /* background-color: rgb(25, 141, 224); */
+  background: rgba(23, 34, 59, 1);
+  position: relative;
+  z-index: 9;
+  /* box-shadow: 0px 0px 3px 0px rgb(46, 152, 228); */
+  color: white;
+}
+
+/*left*/
+.timelin-main li:nth-child(odd) > div {
+  float: left;
+}
+
+/*right*/
+.timelin-main li:nth-child(even) > div {
+  float: right;
+}
+
+.timelin-main li:nth-child(even) {
+  margin-top: 100px;
+}
+
+/*clearing float*/
+.timelin-main li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*left news line*/
+.timelin-main li:nth-child(odd) > div:after {
+  left: 100%;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+/*right news line*/
+.timelin-main li:nth-child(even) > div:after {
+  right: 100%;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+
+/*horizontal line of news elements - depending on the li div width*/
+.timelin-main li > div:after {
+  width: 44.5%;
+  height: 5px;
+}
+
+/*color of lines and circles - combined */
+.timeline-wrapper:before,
+.timeline-wrapper:after,
+.timelin-main:before,
+.timelin-main li:before,
+.timelin-main li > div:after,
+.timelin-main li > div:before {
+  content: "";
+  position: absolute;
+  background-image: -webkit-repeating-linear-gradient(
+    315deg,
+    rgba(107, 119, 141, 1),
+    rgba(107, 119, 141, 1) 25%,
+    rgba(38, 56, 89, 1) 25%,
+    rgba(39, 86, 193, 0.38) 50%
+  );
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(107, 119, 141, 1),
+    rgba(107, 119, 141, 1) 25%,
+    rgba(38, 56, 89, 1) 25%,
+    rgba(39, 86, 193, 0.38) 50%
+  );
+  background-size: 12px 12px;
+}
+
+/*circle style*/
+.timeline-wrapper:before,
+.timeline-wrapper:after,
+.timelin-main li:before,
+.timelin-main li > div:before {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 0px 2px rgba(0, 144, 247, 1);
+  background: rgba(0, 144, 247, 1);
+}
+
+/*make sure the main line and main circles remain horizontally centered*/
+.timeline-wrapper:before,
+.timeline-wrapper:after,
+.timelin-main:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/*make sure the other lines and other circles remain vertically centered*/
+.timelin-main li > div:after,
+.timelin-main li > div:before {
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*circles on the main line*/
+.timelin-main li:before {
+  top: 50%;
+  left: 20%;
+  z-index: 10;
+  /* -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  /* background-color: red; // check which one */
+  visibility: hidden;
+}
+
+.timelin-main li:nth-child(odd):before {
+  margin-top: 23px;
+}
+
+.timelin-main li:nth-child(even):before {
+  margin-top: -24px;
+}
+
+/*rotate the horizontal line*/
+.timelin-main li > div:after {
+  -webkit-transform: translateY(-50%) rotate(10deg);
+  transform: translateY(-50%) rotate(10deg);
+}
+
+/*circle new element*/
+.timelin-main li > div:before {
+  right: 0;
+  z-index: 3;
+}
+
+/*left news circle*/
+.timelin-main li:nth-child(odd) > div:before {
+  right: -7px;
+}
+
+/*right news circl*/
+.timelin-main li:nth-child(even) > div:before {
+  left: -7px;
+}
+
+@media screen and (max-width: 767px) {
+  .timelin-main {
+    padding: 75px 0;
+  }
+  .timelin-main li > div {
+    width: 100%;
+    padding: 40px 10px;
+    text-align: center;
+    box-shadow: none;
+  }
+  .timelin-main li:before {
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+
+  .timelin-main li:nth-child(odd):before,
+  .timelin-main li:nth-child(even):before {
+    margin-top: -7px;
+  }
+
+  .timelin-main li:nth-child(odd) > div:before,
+  .timelin-main li:nth-child(even) > div:before {
+    bottom: -8px;
+    left: 50%;
+    top: auto;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .timelin-main li:nth-child(even) > div:before {
+  }
+  .timelin-main li > div:after {
+    display: none;
+  }
+
+  .timelin-main li {
+    margin: 65px 0;
+  }
+  .timelin-main li:nth-child(even) {
+    margin-top: 0;
+  }
+  .timelin-main li:first-child {
+    margin-top: 0;
+  }
+  .timelin-main li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Animation */
+.timeline-wrapper:before,
+.timeline-wrapper:after,
+.timelin-main li:before,
+.timelin-main li > div:before {
+  -webkit-animation: scale 2s cubic-bezier(1, -0.25, 0.05, 1.67) infinite;
+  animation: scale 2s cubic-bezier(1, -0.25, 0.05, 1.67) infinite;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    box-shadow: 0px 0px 0px 2px rgba(0, 144, 247, 1);
+  }
+
+  25% {
+    box-shadow: 0px 0px 0px 3px rgba(0, 144, 247, 0.7);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 2px rgba(0, 144, 247, 0.5);
+  }
+
+  75% {
+    box-shadow: 0px 0px 0px 3px rgba(0, 144, 247, 0.3);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 2px rgba(0, 144, 247, 1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    box-shadow: 0px 0px 0px 2px rgba(0, 144, 247, 1);
+  }
+
+  25% {
+    box-shadow: 0px 0px 0px 3px rgba(0, 144, 247, 0.7);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 2px rgba(0, 144, 247, 0.5);
+  }
+
+  75% {
+    box-shadow: 0px 0px 0px 3px rgba(0, 144, 247, 0.3);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 2px rgba(0, 144, 247, 1);
+  }
+}
+
+/* extra */
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.6rem;
+  background-color: #ededed;
+}
+.copyright a {
+  display: inline-block;
+  padding: 15px 2px;
+}
+.copyright a:not(:last-child):after {
+  content: "/";
+  margin-left: 10px;
+}
+
+.toptal {
+  color: #204ecf;
+}
+
+.upstack {
+  color: #008bf7;
+}
+
+.upwork {
+  color: #37a000;
+}
+
+.fiverr {
+  color: #1dbf73;
+}
+
+.jobs {
+  color: magenta;
+  text-decoration: underline;
+  margin-top: -15px;
+}

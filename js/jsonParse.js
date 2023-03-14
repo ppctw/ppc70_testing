@@ -1,0 +1,1 @@
+import myJson from '../document/about.json' assert {type: 'json'};

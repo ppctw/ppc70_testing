@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pingtung Peace Church 70</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="" />
+    <meta
+      name="author"
+      content="" />
+    <!-- Le styles -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon.ico" />
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet" />
+    <link
+      href="css/prettyPhoto.css"
+      rel="stylesheet" />
+    <link
+      href="css/icons.css"
+      rel="stylesheet"
+      media="screen" />
+    <link
+      href="css/custom.css"
+      rel="stylesheet" />
+    <link
+      href="css/skindefault.css"
+      rel="stylesheet" />
+    <link
+      href="css/bootstrap-responsive.css"
+      rel="stylesheet" />
+    <link
+      href="css/default.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="css/effect.css" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/ie.css" />
+    <![endif]-->
+    <link
+      rel="stylesheet"
+      href="css/theme.min.css" />
+
+    <!-- Jquery - The rest of the scripts at the bottom-->
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <!-- Loading Animation CSS -->
+    <style>
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        z-index: 9999;
+      }
+      #loading::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      #loading img {
+        width: 50px;
+        height: 50px;
+      }
+      .white-label {
+        background-color: white;
+        color: black;
+        padding: 5px;
+        width: 50%;
+        text-align: center;
+      }
+      .title-h1 {
+        color: white;
+        font-size: 4rem;
+        padding: -2rem;
+        font-weight: bold;
+      }
+      .title-h1-aqua {
+        color: aqua;
+        font-size: 4rem;
+        font-weight: bold;
+      }
+      .image-container {
+        float: right;
+        width: 240px;
+        /* height: 250px; */
+        overflow: hidden;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%, 25% 75%); */
+        /* border-radius: 0 0 0 150%;
+
+        border-bottom-left-radius: 150%; */
+      }
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover;
+        object-position: 50px 15%; */
+      }
+      .lable-title {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      /* 去除預設的底線和藍色字 */
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+
+      /* 設置滑鼠懸停時的顏色 */
+      a:hover {
+        color: red;
+      }
+      .wrapper_team {
+        padding: 10px 0;
+      }
+      .wrapper_team .our_team img {
+        width: 100%;
+        height: auto;
+      }
+      .wrapper_team .our_team {
+        box-shadow: none;
+        margin-bottom: 10px;
+        transform: translateY(0px);
+        transition: all 0.5s ease 0s;
+      }
+
+      .wrapper_team .our_team .pro_detail {
+        padding: 5px;
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: #d3d3d3;
+      }
+      .wrapper_team .our_team .pro_detail .pro_name {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0 0 2px;
+      }
+      .wrapper_team .our_team .pro_detail .pro_desc {
+        display: block;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      .wrapper_team .our_team .pro_detail .pro_desc::after {
+        content: "";
+        display: block;
+        margin: 10px 0;
+        border: 1px solid #d3d3d3;
+      }
+      .wrapper_team .our_team .pro_detail .pro_contact {
+        display: block;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1px;
+        padding: 5px 10px;
+        letter-spacing: 3px;
+        background: rgba(255, 50, 50, 0.8);
+      }
+      .wrapper_team .our_team .pro_detail .pro_contact i {
+        font-size: 20px;
+      }
+      .wrapper_team .our_team:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 10px 7px rgba(0, 0, 0, 0.5);
+      }
+      .wrapper_our .wrap_item i {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 20px;
+      }
+      .wrapper_our .wrap_item strong {
+        display: block;
+        font-size: 26px;
+        color: #000;
+      }
+      .wrapper_our .wrap_item span {
+        display: block;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+    </style>
+    <!--  -->
+  </head>
+  <body>
+    <!-- Header
+================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div id="navbar_component"></div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Loading Animation -->
+    <div id="loading">
+      <img
+        src="img/loading.svg"
+        alt="Loading..." />
+    </div>
+    <!--  -->
+    <!-- Content
+================================================== -->
+    <div class="container">
+      <!--First Intro 
+	  ================================================== -->
+      <div class="align-items-center justify-content-center text-center">
+        <div class="col-12">
+          <h1 class="display-huge mt-3 mb-5 lh-1 tab-container effectTab-header">教會團隊</h1>
+        </div>
+        <div
+          class="col-12"
+          data-aos="zoom-in-up">
+          <h2 class="lead text-secondary text-white text-left">
+            和平教會建造至今，會友人數已突破1,000人，為了幫助會友在信仰上不斷追求與成長，信心穩固，屬靈成熟，
+            我們建立了牧養團隊與事工團隊，全職團隊有主任牧師夫婦、1位教育牧師、5位傳道，帶職同工團隊則有3位區長，54位小組長。
+          </h2>
+          <br />
+          <h2 class="lead text-secondary text-white text-left">
+            按照不同年齡層與屬性，我們也分為五大教會——兒童教會、青少年教會、青年教會、職青教會、成人教會，並有專責的傳道人來牧養，各教會又按照不同的需要進行分區與分組，設立區長與組長。
+          </h2>
+        </div>
+
+        <p
+          class="lead border-top pt-5 mt-5"
+          data-aos="fade-up"></p>
+      </div>
+    </div>
+
+    <!-- Row1 -->
+    <div
+      class="grid align-items-top justify-content-center"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/A_104534 .jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h1 style="font-weight: bold">PASTORAL</h1>
+        <h4 class="white-label">全職牧養團隊</h4>
+        <p class="pt-3">
+          和平教會目前共有七位全職牧者<br /><br />
+          兩位牧師（前左至右）——主任牧師葛兆昕牧師、教育牧師翁梵偉牧師。<br /><br />
+          以及五位傳道（後左至右）——黃興隆傳道、陳冠婷傳道、張仁蕙傳道、鄭韻語傳道、林昌賢傳道。
+        </p>
+      </div>
+    </div>
+    <!-- END Row1 -->
+    <!-- Row2 -->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/A_204132 .jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h4>主任牧師</h4>
+        <h1 class="title-h1">SENIOR</h1>
+        <h1 class="title-h1">POSTER</h1>
+        <h1 class="title-h1-aqua">FAMILY</h1>
+        <h4 class="white-label">葛兆昕牧師一家</h4>
+        <p class="pt-3">
+          葛兆昕牧師與陳慧瑟師母共育有一男一女——葛恩霈、葛恩昀。全家一同委身和平教會，參與服事，同心建造教會，成為美好的榜樣與典範。
+        </p>
+        <blockquote>
+          <h1 class="title text-left">「至於我和我家，我們必定事奉耶和華。」</h1>
+          <small style="text-align: center; font-family: 'Century Gothic', Verdana, sans-serif"
+            >約書亞記24:15
+          </small>
+        </blockquote>
+      </div>
+    </div>
+    <!-- END Row2 -->
+    <!-- Row3 -->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span4">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/img_1.png"
+          class="img-fluid" />
+      </div>
+      <div class="span8">
+        <div class="image-container">
+          <img
+            src="assets/image/ch1-3/img4.png"
+            alt="example image" />
+        </div>
+        <div style="padding-top: 10rem; padding-left: 2rem">
+          <h4>葛兆昕 牧師</h4>
+          <p>主任牧師</p>
+          <p class="pt-3">
+            兆昕牧師於2012年就任成為屏東和平教會第四任主任牧師。<br /><br />
+            這十年來，兆昕牧師按著基督對教會的定義與藍圖來建造教會，看重強本外展、門徒訓練、興起領袖，並致力於建造和平教會成為「新世代使徒的育成中心」，在這末後的世代，為主的再來做預備，差遣門徒，在各處建造教會，完成大使命！
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- END Row3 -->
+    <!-- Row4 -->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span4">
+        <img
+          style="padding-bottom: 2rem; padding-left: 0.5rem"
+          src="assets/image/ch1-3/img2-cutout.png"
+          class="img-fluid" />
+      </div>
+      <div class="span8">
+        <div style="justify-content: center; display: flex">
+          <img
+            style="width: 60%"
+            src="assets/image/ch1-3/img1.png"
+            class="img-fluid" />
+        </div>
+        <p
+          class="pt-5"
+          style="padding-left: 2rem">
+          兆昕牧師也經常在《我的昕觀點》粉絲專頁和Instagram中，以聖經真理來回應生命與生活中的許多問題，
+          分享他的觀察與反思，提出許多值得深思的問題，促進大家思考生命重要的議題，並與弟兄姐妹彼此回應與互動。
+        </p>
+      </div>
+    </div>
+    <!-- END Row4 -->
+    <!--  Row 5 -->
+    <div
+      class="grid align-items-end justify-content-center pt-5"
+      data-aos="fade-up">
+      <h1 style="font-weight: bold; padding-bottom: 0.5rem">PASTORAL TEAM</h1>
+    </div>
+    <div
+      class="grid align-items-top justify-content-center"
+      data-aos="fade-up">
+      <div class=" ">
+        <div class="span3">
+          <img
+            style="padding-bottom: 2rem"
+            src="assets/image/ch1-3/A_104563 .jpg"
+            class="img-fluid" />
+          <h4>翁梵偉 牧師</h4>
+          <p class="pt-3">專責「兒童教會」的牧養與發展。</p>
+        </div>
+        <div class="span3">
+          <img
+            style="padding-bottom: 2rem"
+            src="assets/image/ch1-3/A_104539 .jpg"
+            class="img-fluid" />
+          <h4>鄭韻語 傳道</h4>
+          <p class="pt-3">專責「青少年教會」的牧養與發展。</p>
+        </div>
+        <div class="span3">
+          <img
+            style="padding-bottom: 2rem"
+            src="assets/image/ch1-3/A_104604 .jpg"
+            class="img-fluid" />
+          <h4>張仁蕙 傳道</h4>
+          <p class="pt-3">專責「青年教會」的牧養與發展</p>
+        </div>
+        <div class="span3">
+          <img
+            style="padding-bottom: 2rem"
+            src="assets/image/ch1-3/A_104582 .jpg"
+            class="img-fluid" />
+          <h4>黃興隆 傳道</h4>
+          <p class="pt-3">專責「職青教會」的牧養與發展。</p>
+        </div>
+      </div>
+      <div class=" ">
+        <div class="span3">
+          <img
+            style="padding-bottom: 2rem"
+            src="assets/image/ch1-3/A_104574 .jpg"
+            class="img-fluid" />
+          <h4>林昌賢 傳道</h4>
+          <p class="pt-3">專責「老神在在」的經營與發展。</p>
+        </div>
+        <div class="span3">
+          <img
+            style="padding-bottom: 2rem"
+            src="assets/image/ch1-3/A_104599 .jpg"
+            class="img-fluid" />
+          <h4>陳冠婷 傳道</h4>
+          <p class="pt-3">專責「視覺傳達團隊」的經營與發展。</p>
+        </div>
+      </div>
+    </div>
+    <!-- Row 6 -->
+    <div class="container-md">
+      <div
+        class="grid align-items-end justify-content-center pt-5"
+        data-aos="fade-up">
+        <h1 style="font-weight: bold; padding-bottom: 0.5rem">長執團隊</h1>
+      </div>
+      <div
+        class="row align-items-center justify-content-center"
+        data-aos="fade-up">
+        <div class="wrapper_team grid align-items-top justify-content-center">
+          <div
+            class="team_component"
+            data-title="王美蓉"
+            data-description="長老"
+            data-imgUrl="assets/image/ch1-3/img/img_1.jpg"></div>
+          <div
+            class="team_component"
+            data-title="高培倫"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_2.jpg"></div>
+          <div
+            class="team_component"
+            data-title="林冠嫣"
+            data-description="長老"
+            data-imgUrl="assets/image/ch1-3/img/img_3.jpg"></div>
+          <div
+            class="team_component"
+            data-title="陳亭媛"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_4.jpg"></div>
+          <div
+            class="team_component"
+            data-title="劉麗君"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_5.jpg"></div>
+          <div
+            class="team_component"
+            data-title="唐月裡"
+            data-description="長老"
+            data-imgUrl="assets/image/ch1-3/img/img_6.jpg"></div>
+          <div
+            class="team_component"
+            data-title="張基炎"
+            data-description="長老"
+            data-imgUrl="assets/image/ch1-3/img/img_7.jpg"></div>
+          <div
+            class="team_component"
+            data-title="黃瑞文"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_8.jpg"></div>
+          <div
+            class="team_component"
+            data-title="蔣佩玲"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_9.jpg"></div>
+          <div
+            class="team_component"
+            data-title="楊勝雄"
+            data-description="長老"
+            data-imgUrl="assets/image/ch1-3/img/img_10.jpg"></div>
+          <div
+            class="team_component"
+            data-title="黃林翔"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_11.jpg"></div>
+          <div
+            class="team_component"
+            data-title="陳柏怡"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_12.jpg"></div>
+          <div
+            class="team_component"
+            data-title="李思穎"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_13.jpg"></div>
+          <div
+            class="team_component"
+            data-title="洪條月"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_14.jpg"></div>
+          <div
+            class="team_component"
+            data-title="徐達玲"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_15.jpg"></div>
+          <div
+            class="team_component"
+            data-title="許美玲"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_16.jpg"></div>
+          <div
+            class="team_component"
+            data-title="蔡佳樺"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_17.jpg"></div>
+          <div
+            class="team_component"
+            data-title="徐培喬"
+            data-description="執事"
+            data-imgUrl="assets/image/ch1-3/img/img_18.jpg"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END Row6 -->
+    <!-- Row 7 兒童教會牧養團隊-->
+    <div class="container-md">
+      <div
+        class="grid align-items-end justify-content-center pt-5"
+        data-aos="fade-up">
+        <h1 style="font-weight: bold; padding-bottom: 0.5rem">牧養團隊</h1>
+      </div>
+    </div>
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/A_204488 .jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h1 style="font-weight: bold">CHILDREN</h1>
+        <h4 class="white-label">兒童教會牧養團隊</h4>
+        <p class="pt-3">
+          在大屏東地區建立一個強盛的基督教兒童事工，使兒童經歷生命的改變，成為充滿信、望、愛、創意、
+          品格及能力兼備的新世代靚小子(Smart Kids)！
+          <br /><br />每個主日，我們聚集孩子們一起來敬拜上帝，透過崇拜的參與，使孩子們在其中遇見、
+          經歷上帝，領受上帝的恩惠、經歷生命的轉化。崇拜過後，我們進一步透過分齡的小組聚會，幫助孩子將信息與生活應用進行連結。
+        </p>
+      </div>
+    </div>
+    <!-- END Row 7 -->
+    <!-- Row 8 青少年教會牧養團隊-->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/A_104623 .jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h1 style="font-weight: bold">TEENAGERS</h1>
+        <h4 class="white-label">青少年教會牧養團隊</h4>
+        <p class="pt-3">
+          青少年是教會的未來，是下一個世代的中流砥柱，因此，青少年教會看重學生靈命的建造、與神的關係、品格的培養、能力的訓練、良好的人際關係、負責盡職的態度；
+          我們也鼓勵國高中生，在校園中成為美好的見證，叫人不小看我們年輕，在言語、行為、愛心、信心、清潔上，做眾人的榜樣！
+        </p>
+      </div>
+    </div>
+    <!-- END Row 8 -->
+    <!-- Row 9 青年教會牧養團隊-->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/img_4.jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h1 style="font-weight: bold">YOUTH</h1>
+        <h4 class="white-label">青年教會牧養團隊</h4>
+        <p class="pt-3">
+          青年教會致力於培育興起下一世代領袖，各小組強化靈命建造，塑造大學生擁有執行力、
+          承擔力、續航力、領導力、影響力、競爭力、洞察力、創新力、思考力和解決問題的能力，
+          並經營個人「屬靈認領」與「外展佈道」的生命，在各自的校園禾場展開各樣關懷行動，並透過外展活動接觸、關懷大專學生。
+        </p>
+      </div>
+    </div>
+    <!-- END Row 9 -->
+    <!-- Row 10  職青教會牧養團隊-->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/A_204463 .jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h1 style="font-weight: bold">YOUNG ADULT</h1>
+        <h4 class="white-label">職青教會牧養團隊</h4>
+        <p class="pt-3">
+          職青教會注重建造教會之講究，期待人人委身教會，接受裝備與門徒訓練，並參與服事，做學生們的榜樣，
+          做長輩們的後盾，成為和平教會之中流砥柱。此外，我們鼓勵人人認領職場，接觸關懷，負責盡職，在職場中作光作鹽。
+        </p>
+      </div>
+    </div>
+    <!-- END Row 10 -->
+    <!-- Row 11 社A區牧養團隊-->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/img_5.jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h1 style="font-weight: bold">MIDDLE AGED</h1>
+        <h4 class="white-label">社A區牧養團隊</h4>
+        <p class="pt-3">
+          致力於建造職場中壯年人士，期待人人委身教會、接受裝備、參與事奉，在職場與教會中，
+          都成為年輕人的榜樣，並齊心服事教會的長輩，同心建造教會。
+        </p>
+      </div>
+    </div>
+    <!-- END Row 11 -->
+    <!-- Row 11 社A區牧養團隊-->
+    <div
+      class="grid align-items-top justify-content-center pt-5"
+      data-aos="fade-up">
+      <div class="span6">
+        <img
+          style="padding-bottom: 2rem"
+          src="assets/image/ch1-3/img_6.jpg"
+          class="img-fluid" />
+      </div>
+      <div class="span6">
+        <h1 style="font-weight: bold">ELDERLY</h1>
+        <h4 class="white-label">成人教會牧養團隊</h4>
+        <p class="pt-3">
+          興起年長者，成為「迦勒」般的世代，擁有如迦勒一樣的心志：「看哪，現今我八十五歲了，我還是強壯，像摩西打發我去的那天一樣；無論是爭戰，是出入，我的力量那時如何，現在還是如何。（約書亞記
+          14:10b-11）」讓年長者不因年齡而退縮，反而因著信能在信仰、服事、佈道及生活上成為年輕人的榜樣。
+        </p>
+      </div>
+    </div>
+    <!--  Intro -->
+    <div
+      class="row d-flex align-items-center justify-content-center"
+      style="padding-bottom: 2rem">
+      <a
+        class="lable-title"
+        href="aboutPPC_page4.html"
+        >事工團隊 ></a
+      >
+    </div>
+    <!-- END Row 11 -->
+    <div class="d-flex pt-5 align-items-center justify-content-center text-center">
+      <a
+        role="button"
+        href="aboutPPC_page2.html"
+        class="toleft"
+        style="text-decoration: none">
+        <i class="icon-chevron-left"> &nbsp;回上一節</i>
+      </a>
+      <a
+        role="button"
+        href="ppcTenYears.html"
+        class="toleft"
+        style="text-decoration: none"
+        >&nbsp;下一章
+        <i class="icon-chevron-right"> </i>
+      </a>
+    </div>
+
+    <!-- End Content -->
+    <!-- Footer
+================================================== -->
+    <div id="footer_c"></div>
+    <!-- End Footer -->
+    <!-- Le javascript
+================================================== -->
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+      let cTest = new Date().getFullYear();
+    </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
+
+      const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
+      });
+    </script>
+    <!-- Loading Anitmation script -->
+    <script>
+      window.addEventListener("load", function () {
+        var loadingScreen = document.getElementById("loading");
+        loadingScreen.style.display = "none";
+      });
+    </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="team.js"></script>
+  </body>
+</html>

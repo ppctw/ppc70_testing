@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pingtung Peace Church 70</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="" />
+    <meta
+      name="author"
+      content="" />
+    <!-- Le styles -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon.ico" />
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet" />
+    <link
+      href="css/prettyPhoto.css"
+      rel="stylesheet" />
+    <link
+      href="css/icons.css"
+      rel="stylesheet"
+      media="screen" />
+    <link
+      href="css/custom.css"
+      rel="stylesheet" />
+    <link
+      href="css/skindefault.css"
+      rel="stylesheet" />
+    <link
+      href="css/bootstrap-responsive.css"
+      rel="stylesheet" />
+    <link
+      href="css/default.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="css/effect.css" />
+    <link
+      rel="stylesheet"
+      href="css/effectFigure.css" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/ie.css" />
+    <![endif]-->
+    <link
+      rel="stylesheet"
+      href="css/theme.min.css" />
+
+    <!-- Jquery - The rest of the scripts at the bottom-->
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <!-- Loading Animation CSS -->
+    <style>
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        z-index: 9999;
+      }
+      #loading::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      #loading img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <!--  -->
+  </head>
+  <body>
+    <!-- Header
+================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div id="navbar_component"></div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Loading Animation -->
+    <div id="loading">
+      <img
+        src="img/loading.svg"
+        alt="Loading..." />
+    </div>
+    <!--  -->
+    <!-- Content
+================================================== -->
+    <div class="container">
+      <section class="tab-container effectTab-header">
+        <div class="custom-row">
+          <div
+            class="wrapper"
+            align="center"
+            data-aos="fade-up">
+            <h1 class="ti title text-white">認識和平教會</h1>
+          </div>
+
+          <div class="grid">
+            <div>
+              <figureFull
+                class="effect-julia"
+                data-aos="fade-up">
+                <a href="aboutPPC_page1.html">
+                  <img
+                    style="max-width: 100%; height: auto"
+                    src="./assets/image/ch1_1.png"
+                    alt="img22" />
+                  <figcaption>
+                    <h2><span>使命宣言</span></h2>
+                    <div>
+                      <p>建立一個強本外展，</p>
+                      <br />
+                      <p>虛實整合、使徒性的和平教會</p>
+                    </div>
+                  </figcaption>
+                </a>
+              </figureFull>
+            </div>
+          </div>
+          <div class="grid">
+            <figure
+              class="effect-julia col-6"
+              data-aos="fade-left">
+              <a href="aboutPPC_page2.html">
+                <img
+                  src="./assets/image/ch1_2.png"
+                  alt="img22" />
+                <figcaption>
+                  <h2><span>PPC 2.0</span></h2>
+                  <div>
+                    <p>「和平教會2.0」的建造，</p>
+                    <p>就是一個使徒性教會的建造</p>
+                  </div>
+                </figcaption>
+              </a>
+            </figure>
+            <figure
+              class="effect-julia col-6"
+              data-aos="fade-up">
+              <a href="aboutPPC_page3.html">
+                <img
+                  src="./assets/image/ch1_3.png"
+                  alt="img22" />
+                <figcaption>
+                  <h2><span>教會團隊</span></h2>
+                  <div>
+                    <p>牧養團隊與事工團隊</p>
+                    <p>幫助會友在信仰上不斷追求與成長，</p>
+                    <p>信心穩固，屬靈成熟</p>
+                  </div>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Content -->
+    <!-- Footer
+================================================== -->
+    <div id="footer_c"></div>
+    <!-- End Footer -->
+    <!-- Le javascript
+================================================== -->
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin></script>
+
+    <!-- Load our React component. -->
+
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+      let cTest = new Date().getFullYear();
+    </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
+
+      const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
+
+        console.log(scrollpos);
+      });
+    </script>
+    <!-- Loading Anitmation script -->
+    <script>
+      window.addEventListener("load", function () {
+        var loadingScreen = document.getElementById("loading");
+        loadingScreen.style.display = "none";
+      });
+    </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+  </body>
+</html>

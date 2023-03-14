@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pingtung Peace Church 70</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="" />
+    <meta
+      name="author"
+      content="" />
+    <!-- Le styles -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon.ico" />
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet" />
+    <link
+      href="css/prettyPhoto.css"
+      rel="stylesheet" />
+    <link
+      href="css/icons.css"
+      rel="stylesheet"
+      media="screen" />
+    <link
+      href="css/custom.css"
+      rel="stylesheet" />
+    <link
+      href="css/skindefault.css"
+      rel="stylesheet" />
+    <link
+      href="css/bootstrap-responsive.css"
+      rel="stylesheet" />
+    <link
+      href="css/default.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="css/effect.css" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/ie.css" />
+    <![endif]-->
+    <link
+      rel="stylesheet"
+      href="css/theme.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/timeLine2.css" />
+
+    <!-- Jquery - The rest of the scripts at the bottom-->
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <!-- Loading Animation CSS -->
+    <style>
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        z-index: 9999;
+      }
+      #loading::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      #loading img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .button {
+        padding: 1rem 1.5rem;
+        border-radius: 2px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #e57373;
+        color: #ffffff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+      .button:hover {
+        background-color: #e55e6d;
+      }
+
+      .modal {
+        visibility: hidden;
+        /* position: fixed; */
+        /* top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; */
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transition: all 0.3s; */
+      }
+      .modal_inner {
+        max-width: 32rem;
+        padding: 1.5rem;
+        border-radius: 2px;
+        background-color: #ffffff;
+        color: black;
+        /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+        opacity: 0;
+        /* transform: scale(0.8);
+        transition: all 0.3s; */
+      }
+
+      .modal.-open {
+        z-index: inherit;
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .modal.-open .modal_inner {
+        opacity: 1;
+        /* transform: scale(1); */
+      }
+
+      #frame {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header
+================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div id="navbar_component"></div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Content
+================================================== -->
+    <!-- Loading Animation -->
+    <div id="loading">
+      <img
+        src="img/loading.svg"
+        alt="Loading..." />
+    </div>
+    <!--First Intro 
+	  ================================================== -->
+    <div
+      class="container"
+      id="frame">
+      <button
+        class="button"
+        data-target="modal1">
+        Open modal
+      </button>
+      <div
+        class="modal"
+        id="modal1">
+        <div class="modal_inner">
+          你流出寶血 洗淨我污穢 將我的生命贖回 你為了我的罪，犧牲永不悔 顯明你極大恩惠 我深深體會
+          你愛的寶貴 獻上自己永追隨 或傷心或氣餒或生離或死別 願剛強壯膽永遠不後退 哦 你愛永不變
+          從今直到永遠 深深澆灌我心田 或天旋或地轉經滄海歷桑田 都不能叫我與你愛隔絕
+        </div>
+      </div>
+    </div>
+
+    <!-- END Intro -->
+    <div class="d-flex pt-5 align-items-center justify-content-center text-center">
+      <a
+        role="button"
+        href="index.html"
+        class="toleft"
+        style="text-decoration: none">
+        <i class="icon-chevron-left"> &nbsp;回第五章</i>
+      </a>
+      <a
+        role="button"
+        href="index.html"
+        class="toleft"
+        style="text-decoration: none"
+        >&nbsp;下一節
+        <i class="icon-chevron-right"> </i>
+      </a>
+    </div>
+
+    <!-- End Content -->
+    <!-- Footer
+================================================== -->
+    <div id="footer_c"></div>
+    <!-- End Footer -->
+    <!-- Le javascript
+================================================== -->
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+      let cTest = new Date().getFullYear();
+    </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
+
+      const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
+
+        // console.log(scrollpos);
+      });
+    </script>
+    <!-- Loading Anitmation script -->
+    <script>
+      window.addEventListener("load", function () {
+        var loadingScreen = document.getElementById("loading");
+        loadingScreen.style.display = "none";
+      });
+    </script>
+    <script>
+      $(".button[data-target]").click(function () {
+        $("#" + this.dataset.target).toggleClass("-open");
+      });
+
+      $(".modal").click(function (e) {
+        if (e.target === this) {
+          $(this).toggleClass("-open");
+        }
+      });
+
+      $("#frame").click(function (e) {
+        if (e.target === this) {
+          $(this).toggleClass("-open");
+        }
+      });
+    </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jsonParse.js"></script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+  </body>
+</html>
