@@ -118,7 +118,8 @@ a:focus {
 }
 .navbar-inverse .navbar-inner {
 	min-height:80px;
-	background-color:#000000;
+	/* background-color:#000000; */
+	background-color: rgba(0, 0, 0, 0.8);
 	background-image:none;
 	border-color:#222;
 	filter:none;
@@ -146,6 +147,7 @@ a:focus {
 }
 .dropdown-menu>li>a {
 	color:#999;
+	
 	font-family:LatoRegular;
 	font-size:14px;
 }

@@ -14,7 +14,7 @@
   position: relative;
   display: inline-block;
   color: #555;
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -47,7 +47,8 @@
 .effectTab-header .title::after,
 .effectTab-header .title::before {
   position: absolute;
-  background: linear-gradient(to right, #ed6ea0 0, #ec8c69 100%);
+  background: linear-gradient(to right, #0000ff 0, #c76bee 100%);
+  /* background: linear-gradient(to right, #ed6ea0 0, #ec8c69 100%); */
   content: "";
 }
 
@@ -1203,7 +1204,8 @@ body {
 }
 
 .effect.effect-seven {
-  background: linear-gradient(-45deg, #f3cf3f 0, #f33f58 100%);
+  /* background: linear-gradient(-45deg, #f3cf3f 0, #f33f58 100%); */
+  background: linear-gradient(-5deg, #0000ff 0, #c76bee 100%);
 }
 
 .effect.effect-eight,

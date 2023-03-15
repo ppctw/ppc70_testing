@@ -430,34 +430,34 @@
   }
 }
 #timeLine_yellow .time_line-date {
-  color: #ffa705;
+  color: #eef2e6;
 }
 #timeLine_yellow .time_line-content:before {
-  background: #ffa705;
+  background: #eef2e6;
 }
 #timeLine_red .time_line-date {
-  color: #ff5600;
+  color: #d6cda4;
 }
 #timeLine_red .time_line-content:before {
-  background: #ff5600;
+  background: #d6cda4;
 }
 #timeLine_lightBlue .time_line-date {
-  color: #69e9f2;
+  color: #3d8361;
 }
 #timeLine_lightBlue .time_line-content:before {
-  background: #69e9f2;
+  background: #3d8361;
 }
 #timeLine_blue .time_line-date {
-  color: #12affe;
+  color: #1c6758;
 }
 #timeLine_blue .time_line-content:before {
-  background: #12affe;
+  background: #1c6758;
 }
 #timeLine_darkBlue .time_line-date {
-  color: #3224e9;
+  color: #5f939a;
 }
 #timeLine_darkBlue .time_line-content:before {
-  background: #3224e9;
+  background: #5f939a;
 }
 .extended-parallax {
   position: absolute;

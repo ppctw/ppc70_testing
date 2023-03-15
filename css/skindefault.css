@@ -62,10 +62,12 @@ blockquote {
   /* border-bottom: #ff6666 solid 10px; */
 }
 .totop:hover {
-  background: #ff6666;
+  /* background: #ff6666; */
+  background: #c76bee;
   color: #fff;
 }
 ::selection {
-  background-color: #ff6666;
+  /* background-color: #ff6666; */
+  background-color: #c76bee;
   color: #fff;
 }

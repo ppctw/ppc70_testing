@@ -44,6 +44,11 @@ body {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-purple {
+  --bs-bg-opacity: 1;
+  background-color:  #c76bee !important;
+}
+
 /* .bg-dark:hover p {
   border-radius: 20px;
   --bs-bg-opacity: 1;
@@ -1167,7 +1172,7 @@ figure.effect-moses h2 {
   font-size: 2rem;
   padding: 5px;
   width: 50%;
-  height: 50%;
+  height: 75%;
   text-align: center
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -1177,7 +1182,7 @@ figure.effect-moses h2 {
 
 figure.effect-moses p {
   float: right;
-  padding: 20px;
+  padding: 10px;
   text-align: right;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1191,7 +1196,7 @@ figure.effect-moses:hover h2 {
   transform: translate3d(0, 0, 0);
 }
 
-figure.effect-moses:hover p {
+/* figure.effect-moses:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -1199,7 +1204,7 @@ figure.effect-moses:hover p {
 
 figure.effect-moses:hover img {
   opacity: 0.6;
-}
+} */
 
 /*---------------*/
 /***** Jazz *****/

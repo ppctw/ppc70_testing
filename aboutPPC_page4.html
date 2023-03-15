@@ -128,7 +128,7 @@
 
       /* 設置滑鼠懸停時的顏色 */
       a:hover {
-        color: red;
+        color: #c76bee;
       }
       .titleOne-label {
         background-color: #60c5ba;
@@ -141,6 +141,23 @@
         color: black;
         width: 25%;
         text-align: center;
+      }
+
+      body {
+        background-image: url("assets/design/img5.png");
+        background-size: cover;
+      }
+
+      body::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
       }
     </style>
     <!--  -->
