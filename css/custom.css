@@ -452,7 +452,8 @@ a.prev:hover,a.next:hover {
 	font-weight: bold;
 }
 .testimonial-name span {
-	color:#555;
+	 
+	color:white;
 	font-weight:normal;
 }
 .hirefor {
