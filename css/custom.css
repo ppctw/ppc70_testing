@@ -417,7 +417,17 @@ a.prev:hover,a.next:hover {
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
+	height:18rem;
+	
 }
+
+@media (max-width: 600px) {
+	.testimonial {
+		padding:10px 15px;
+		height: 12rem; /* 視口寬度小於600像素時的高度 */		 
+	}
+}
+
 .author-wrapper {
 	width:100%;
 	margin-bottom:20px;
