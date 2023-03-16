@@ -417,20 +417,22 @@ a.prev:hover,a.next:hover {
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
-	height:18rem;
+	height:14rem;
 	
 }
+
+ 
 
 @media (max-width: 600px) {
 	.testimonial {
 		padding:10px 15px;
-		height: 12rem; /* 視口寬度小於600像素時的高度 */		 
+		height: 8rem; /* 視口寬度小於600像素時的高度 */		 
 	}
 }
 
 .author-wrapper {
 	width:100%;
-	margin-bottom:20px;
+	/* margin-bottom:20px; */
 	float:left;
 }
 .arrow {
@@ -444,10 +446,10 @@ a.prev:hover,a.next:hover {
 	border-bottom:0px;
 }
 .testimonial-name {
-	float:left;
+	/* float:left; */
 	margin:0 8px;
 	color:#ff6666;
-	padding-top:5px;
+	padding-top:50px;
 	font-size:15px;
 	font-weight: bold;
 }
