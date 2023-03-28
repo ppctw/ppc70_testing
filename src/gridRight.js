@@ -12,7 +12,7 @@ class GridRight_component extends React.Component {
  
     return (
       <div class="container pt-5"   >
-      <div class="row hide-md ">      
+      <div class="row   ">      
       <img
           src={this.props.imgUrl}
           class="img-polaroid span3"

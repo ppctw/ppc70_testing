@@ -28,7 +28,7 @@ class Navbar_component extends React.Component {
           <li><a href="agape.html">愛咖啡Agape</a></li>
           {/* <li><a href="index.html">特別報導</a></li> */}
           <li><a href="song.html">詩歌創作</a></li>
-          <li><a href="index.html">關於未來</a></li> 
+          {/* <li><a href="index.html">關於未來</a></li>  */}
                       
         </ul>
       </div>

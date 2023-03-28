@@ -83,7 +83,7 @@ var Navbar_component = function (_React$Component) {
               React.createElement(
                 "a",
                 { href: "agape.html" },
-                "Agape\u611B\u5496\u5561"
+                "\u611B\u5496\u5561Agape"
               )
             ),
             React.createElement(

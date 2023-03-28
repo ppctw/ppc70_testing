@@ -31,7 +31,7 @@ var GridRight_component = function (_React$Component) {
         { "class": "container pt-5" },
         React.createElement(
           "div",
-          { "class": "row hide-md " },
+          { "class": "row   " },
           React.createElement("img", {
             src: this.props.imgUrl,
             "class": "img-polaroid span3",
